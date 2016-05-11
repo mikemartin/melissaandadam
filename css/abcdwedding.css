@@ -1564,7 +1564,7 @@ pre {
   color: #3D595C;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #ccc;
+  border: 1px solid #D0D8CC;
   border-radius: 0.25rem; }
   .form-control::-ms-expand {
     background-color: transparent;
@@ -1573,16 +1573,16 @@ pre {
     border-color: #8FB297;
     outline: none; }
   .form-control::-webkit-input-placeholder {
-    color: #999;
+    color: #9bac92;
     opacity: 1; }
   .form-control::-moz-placeholder {
-    color: #999;
+    color: #9bac92;
     opacity: 1; }
   .form-control:-ms-input-placeholder {
-    color: #999;
+    color: #9bac92;
     opacity: 1; }
   .form-control::placeholder {
-    color: #999;
+    color: #9bac92;
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
     background-color: #D0D8CC;
@@ -2547,7 +2547,7 @@ input[type="button"].btn-block {
   color: #3D595C;
   text-align: center;
   background-color: #D0D8CC;
-  border: 1px solid #ccc;
+  border: 1px solid #D0D8CC;
   border-radius: 0.25rem; }
   .input-group-addon.form-control-sm,
   .input-group-sm > .input-group-addon,
@@ -2690,7 +2690,7 @@ input[type="button"].btn-block {
   background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right 0.75rem center;
   background-image: none \9;
   background-size: 8px 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #D0D8CC;
   -moz-appearance: none;
   -webkit-appearance: none; }
   .c-select:focus {
@@ -4833,6 +4833,9 @@ html:not(.ie) .card-deck {
 
 .c-input > input:active ~ .c-indicator {
   background-color: #8FB297; }
+
+.c-indicator {
+  background-color: #D0D8CC; }
 
 textarea {
   min-height: 146px; }

@@ -1,26 +1,15 @@
 var gulp  = require('gulp'),
-    rsync  = require('gulp-rsync'),
     elixir = require('laravel-elixir');
 
 var theme = 'abcdwedding';
 elixir.config.assetsPath = './';
 
-/*
- |--------------------------------------------------------------------------
- | Elixir Asset Management
- |--------------------------------------------------------------------------
- |
- | Elixir provides a clean, fluent API for defining some basic Gulp tasks
- | for your Statamic theme. By default, we are compiling the Sass
- | file for our application, as well as publishing vendor resources.
- |
- */
-
 elixir(function(mix) {
     mix.sass(theme + '.scss', 'css/' + theme + '.css');
 
     mix.scripts([
-        'vendor/bootstrap.min.js'
+        'vendor/css_browser_selector.js',
+        'vendor/button.js'
     ], './js/' + theme + '.js');
     
 
@@ -33,29 +22,3 @@ elixir(function(mix) {
     });
 
 });
-
-
-// Configure deployment settings
-function deploy() {
-  return gulp.src('.')
-    .pipe(rsync({
-      hostname: 'web509.webfaction.com',
-      destination: '~/webapps/abcdwedding',
-      root: '.',
-      username: 'mikemartin',
-      incremental: true,
-      progress: false,
-      relative: true,
-      emptyDirectories: true,
-      recursive: true,
-      clean: true,
-      exclude: [
-        '.DS_Store',
-        'node_modules',
-        'sass'
-      ]
-    }));
-}
-
-// Deploy site to hosted server
-gulp.task('deploy', deploy);

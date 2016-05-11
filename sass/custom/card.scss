@@ -1,0 +1,63 @@
+.card-inverse {
+  .card-link,
+  .card-text,
+  .card-blockquote > footer {
+    color: $gray-lightest;
+  }
+}
+
+.card-img-overlay {
+  padding: 0;
+}
+
+.card-background {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+html:not(.ie) .card-deck {
+  // Center align cards
+  justify-content: center;
+
+  // Anchor footer to bottom of cards
+  .card, .card-img-overlay {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-block {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+  }
+}
+ 
+.card-deck-item {
+   width: 100%;
+   margin-bottom: ($spacer * 1.5);
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    width: 50%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 33.3%
+  }
+}
+
+.card-footer {
+  padding-bottom: ($card-spacer-y * 2);
+  border-top: 0;
+}
+
+
+.ie .card-footer-bottom {
+  position: absolute;
+  bottom: ($card-spacer-y * 2);
+}
+   

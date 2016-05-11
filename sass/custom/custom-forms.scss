@@ -1,0 +1,18 @@
+.c-input {
+  > input {
+    &:checked ~ .c-indicator {
+      background-color: $brand-primary;
+    }
+    &:focus ~ .c-indicator {
+      box-shadow: none;
+    }
+
+    &:active ~ .c-indicator {
+      background-color: $brand-primary;
+    }
+  }
+}
+
+textarea {
+  min-height: 146px;
+}

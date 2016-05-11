@@ -1,0 +1,30 @@
+$gray-dark:     #364750;
+$gray:          #3D595C;
+$gray-light:    #5C847A;
+$gray-lighter:  #D0D8CC;
+$gray-lightest: #F7F8F6;
+
+$brand-primary: #8FB297;
+
+$card-cap-bg:        transparent;
+$card-border-width:  0px;
+$card-bg:            transparent;
+
+
+//$body-bg:            darken($gray-dark,25%);
+$jumbotron-bg:       transparent;
+
+
+$font-family-sans-serif:     "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-base:           $font-family-sans-serif;
+
+$headings-font-family:       "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-weight:       300;
+$headings-color:             $brand-primary;
+$headings-line-height:       1.3;
+
+$btn-secondary-color:            #FFF;
+$btn-secondary-bg:               $gray-dark;
+$btn-secondary-border:           $btn-secondary-bg;
+
+$input-border-focus:             $brand-primary;

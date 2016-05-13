@@ -16,7 +16,8 @@ elixir(function(mix) {
 
     mix.browserSync({
       files: [
-        'sass/**/*'
+        'sass/**/*',
+        '*.html'
       ],
       proxy: 'abcdwedding.dev',
       reloadDelay: 2000

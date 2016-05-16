@@ -10,7 +10,8 @@ elixir(function(mix) {
     mix.scripts([
         'vendor/css_browser_selector.js',
         'vendor/button.js',
-        'scripts.js',
+        'vendor/modernizr-custom.js',
+        'scripts.js'
     ], './js/' + theme + '.js');
     
 

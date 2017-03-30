@@ -1,7 +1,7 @@
 var gulp  = require('gulp'),
     elixir = require('laravel-elixir');
 
-var theme = 'abcdwedding';
+var theme = 'melissaandadam';
 elixir.config.assetsPath = './';
 
 elixir(function(mix) {
@@ -13,14 +13,14 @@ elixir(function(mix) {
         'vendor/modernizr-custom.js',
         'scripts.js'
     ], './js/' + theme + '.js');
-    
+
 
     mix.browserSync({
       files: [
         'sass/**/*',
         '*.html'
       ],
-      proxy: 'abcdwedding.dev',
+      proxy: 'melissaandadam.dev',
       reloadDelay: 2000
     });
 

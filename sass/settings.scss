@@ -1,10 +1,10 @@
-$gray-dark:     #364750;
-$gray:          #3D595C;
-$gray-light:    #5C847A;
-$gray-lighter:  #D0D8CC;
-$gray-lightest: #F7F8F6;
+$gray-dark:     #525684;
+$gray:          #767698;
+$gray-light:    #A9A4B5;
+$gray-lighter:  #CCD1CB;
+$gray-lightest: #f8f9f8;
 
-$brand-primary: #8FB297;
+$brand-primary: #98BCBA;
 
 $card-cap-bg:        transparent;
 $card-border-width:  0px;
@@ -29,4 +29,3 @@ $btn-secondary-border:           $btn-secondary-bg;
 $input-border-focus:             $brand-primary;
 $input-border-color:             $gray-lighter;
 $input-color-placeholder:        darken($gray-lighter,20%);
-

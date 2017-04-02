@@ -28,7 +28,15 @@
     <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js"></script>
     <script type="text/javascript">
       addeventatc.settings({
-        css        : false
+        mouse      : false,
+        css        : false,
+        outlook    : {show:true, text:"Outlook"},
+        google     : {show:true, text:"Google Calendar"},
+        yahoo      : {show:false},
+        outlookcom : {show:false},
+        appleical  : {show:true, text:"Apple Calendar"},
+        facebook   : {show:false },
+        dropdown   : {order:"appleical,google,outlook"}
       });
     </script>
   </head>
@@ -68,15 +76,18 @@
                   </div>
                 </div>
                 <div class="card-footer card-footer-bottom">
-                  <a title="Add to Calendar" class="btn btn-primary addeventatc" data-direct="google">
+                  <a title="Add to Calendar" class="btn btn-primary addeventatc">
                     Add to Calendar
                     <span class="start">07/07/2017 04:00 PM</span>
-                    <span class="end">07/07/2017 12:00 AM</span>
+                    <span class="end">07/08/2017 12:00 AM</span>
                     <span class="timezone">America/St_Johns</span>
                     <span class="title">Melissa & Adam's Wedding</span>
-                    <span class="description">Join us on July 7th at 4pm!</span>
+                    <span class="description">
+                      Join us on July 7th at 4pm!<br><br>4:00 pm - Ceremony<br>4:30 pm - Cocktail hour<br>5:30 pm - Supper<br>Dance to follow
+                    </span>
                     <span class="location">Lester's Farm Chalet, 90 Pearltown Rd, St. John's, NL</span>
                     <span class="date_format">MM/DD/YYYY</span>
+                    <span class="calname">melissaandadam</span>
                   </a>
                 </div>
               </div>
